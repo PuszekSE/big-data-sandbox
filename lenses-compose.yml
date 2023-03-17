@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  lenses:
+    image: lensesio/lenses:5.0
+    environment:
+      LENSES_PORT: 12340
+      LENSES_SECURITY_USER: admin
+      LENSES_SECURITY_PASSWORD: sha256:8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+    ports:
+      - 12340:12340
+      - 9102:9102
